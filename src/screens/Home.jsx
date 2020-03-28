@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-import Header from '../components/header/Header'
 import MidleHeader from '../components/midle/MidleHeader'
 import Table from "../components/table/Table";
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Header />
+      <div>
         <MidleHeader />
         <Table/>
-      </React.Fragment>
+      </div>
     );
   }
 }
 
-export default App;
+export default Home;
