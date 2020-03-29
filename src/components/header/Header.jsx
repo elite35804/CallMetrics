@@ -20,7 +20,7 @@ const Header = props => {
               <a className="dropdown-toggle menudrop" data-toggle="dropdown" role="button" aria-haspopup="true"
                  aria-expanded="false" title="" data-original-title="Numbers"><span><i
                 className="font-grid4 subtle"/> <span className="menu-label">Numbers</span></span></a>
-              <div className="ctm-hrsub dropdown-menu" style={{maxWidth: "calc((100vw - 20px) - 185px);"}}>
+              <div className="ctm-hrsub dropdown-menu" style={{maxWidth: "calc((100vw - 20px) - 185px)"}}>
                 <div className="ctm-hrsub-inner">
                   <div className="container-fluid">
                     <div className="row">
@@ -454,6 +454,7 @@ const Header = props => {
           </ul>
         </div>
       </nav>
+      {props.children}
     </header>
   );
 };

@@ -1,0 +1,41 @@
+.dataTables_filter {
+    padding-left: 52px;
+}
+
+.dataTables_filter .filter-options {
+    position: absolute;
+    left: 15px;
+}
+
+.users-table .mobile-primary .agent-initials {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+@media (max-width: 767px) {
+    table.standard-table.table-mobile.users-table > tbody > tr > td.mobile-primary,
+    table.standard-table.table-mobile.users-table > tbody > tr > td.mobile-secondary {
+        padding-left: 55px !important;
+        /*padding-left: calc(env(safe-area-inset-left) + 55px) !important;*/
+    }
+
+    .users-table .mobile-primary .agent-info .agent-initials {
+        position: absolute;
+        left: 10px;
+        /*left: calc(env(safe-area-inset-left) + 10px);*/
+        top: calc(50% - 17px);
+    }
+}
+
+.edit-outbound {
+    display: inline-block;
+}
+
+.filter-table.more.button {
+    margin-left: 5px;
+    margin-bottom: 0;
+    vertical-align: middle;
+}

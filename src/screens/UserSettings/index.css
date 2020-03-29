@@ -1,0 +1,29 @@
+.response-name {
+    width: 300px;
+    max-width: calc(100% - 30px);
+}
+
+.response-delete {
+    font-size: 19px;
+    vertical-align: middle;
+    float: right;
+    margin-top: 3px;
+}
+
+.response-message {
+    width: 100%;
+    height: 50px;
+}
+
+.animation_custom {
+    opacity: initial;
+    animation: 0s ease 0s 1 normal none running none;
+}
+
+#assign_schedule .select2-container{
+    width: 300px;
+}
+
+#assign_outbound .select2-container{
+    width: 300px;
+}
