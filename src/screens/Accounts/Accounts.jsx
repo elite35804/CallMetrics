@@ -47,7 +47,7 @@ const Accounts = props => {
                       style={{position: 'absolute', width: 33, marginBottom: 0}}><i className="font-search"/>
               </button>
 
-              {isStatus&& <div className="edit-status-picker">
+              {isStatus && <div className="edit-status-picker">
                 <label>Status&nbsp;</label>
                 <div className="select2-container select2-container-active" style={{width: 180}}>
                   <a href="#" className="select2-choice">
@@ -57,8 +57,8 @@ const Accounts = props => {
                   </a>
                   <label className="select2-offscreen"/>
                   <input className="select2-focusser select2-offscreen" type="text" aria-haspopup="true"
-                  role="button" aria-labelledby="select2-chosen-440245058"
-                  id="s2id_autogen440245058"/>
+                         role="button" aria-labelledby="select2-chosen-440245058"
+                         id="s2id_autogen440245058"/>
                 </div>
                 <select style={{width: 180, display: 'none'}}>
                   <option/>
@@ -69,7 +69,8 @@ const Accounts = props => {
             </div>
 
 
-            <div className="dataTables_dateSelect col-xs-12 col-sm-8 col-md-4 col-lg-4 text-right" style={{float: 'right'}}>
+            <div className="dataTables_dateSelect col-xs-12 col-sm-8 col-md-4 col-lg-4 text-right"
+                 style={{float: 'right'}}>
               <a className="hidden-sm hidden-xs edit-agent-status button minimal" style={{marginRight: 5}}
                  onClick={() => setStatus(!isStatus)}
               >
@@ -242,7 +243,8 @@ const Accounts = props => {
               </table>
             </div>
           </div>
-          <div className="optional pull-right entries-per-page" style={{paddingTop: 8, marginBottom: 20}}>Per page:&nbsp;
+          <div className="optional pull-right entries-per-page" style={{paddingTop: 8, marginBottom: 20}}>Per
+            page:&nbsp;
             <input type="hidden" className="standard-table-entries-default" value="10"/>
             <select className="standard-table-entries standard_height" size="1">
               <option value="10">10</option>

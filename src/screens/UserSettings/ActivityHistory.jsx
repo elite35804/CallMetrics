@@ -4,7 +4,7 @@ const ActivityHistory = props => {
   return (
     <div className="field" id="user-logins">
       <h3>Activity History
-        <small>times and IP addresses of recent activity
+        <small>times and IP addresses of recent activity&nbsp;
           <a className="button outlined pull-right">Reporting</a>
         </small>
       </h3>

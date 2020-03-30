@@ -16,28 +16,34 @@ import Versions from "./Versions";
 import Header from "../../components/header/Header";
 
 const UserSettings = props => {
-  const [isInfo, setInfo] = useState(true);
+  const [isInfo, setInfo] = useState(false);
   return (
     <div>
       <Header>
         <SubHeader setInfo={setInfo} isInfo={isInfo}/>
       </Header>
-      <div className="sidenav-container container-fluid">
-        <div className="row sidebar-row">
-          <Sidebar/>
-          <div className="col-md-10 pageform">
-            <div className="row animation_custom">
-              {isInfo && <Info />}
-              <Detail />
-              <Authentication />
-              <AgentProfile />
-              <AgentContact />
-              <MessageResponse />
-              <InboundVoicemail />
-              <OutboundVoicemail />
-              <Devices />
-              <ActivityHistory />
-              <Versions />
+      <div id="content-wrapper">
+        <div id="content" className="wrapper">
+          <div id="body" style={{overflowX: 'hidden'}}>
+            <div className="sidenav-container container-fluid">
+              <div className="row sidebar-row">
+                <Sidebar/>
+                <div className="col-md-10 pageform">
+                  <div className="row">
+                    {isInfo && <Info />}
+                    <Detail />
+                    <Authentication />
+                    <AgentProfile />
+                    <AgentContact />
+                    <MessageResponse />
+                    <InboundVoicemail />
+                    <OutboundVoicemail />
+                    <Devices />
+                    <ActivityHistory />
+                    <Versions />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

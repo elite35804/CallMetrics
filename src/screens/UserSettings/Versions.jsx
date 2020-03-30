@@ -3,7 +3,7 @@ import './index.css';
 
 const Versions = props => {
   return (
-    <div id="user-history" className="field">
+    <div id="user-history" className="field" style={{marginBottom: 300}}>
       <h3>Versions
         <small>click on a row to restore an older version of this user</small>
       </h3>
